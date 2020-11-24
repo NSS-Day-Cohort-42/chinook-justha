@@ -2,3 +2,10 @@
 -- HINT: GROUP BY
 
 
+SELECT 
+    il.InvoiceId,
+    COUNT(il.InvoiceLineId) AS TotalLineItems
+FROM 
+    InvoiceLine il
+GROUP BY 
+    il.InvoiceId;

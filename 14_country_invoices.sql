@@ -2,3 +2,10 @@
 -- HINT: GROUP BY
 
 
+SELECT 
+    i.BillingCountry,
+    COUNT(i.InvoiceId) AS TotalInvoicesCount
+FROM 
+    Invoice i 
+GROUP BY 
+    i.BillingCountry

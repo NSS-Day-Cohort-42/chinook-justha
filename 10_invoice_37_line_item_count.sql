@@ -2,7 +2,8 @@
 
 
 SELECT 
-    COUNT(il.InvoiceLineId)
+    il.InvoiceId,
+    COUNT(il.InvoiceLineId) AS TotalLineItems
 FROM 
     InvoiceLine il
 WHERE 
