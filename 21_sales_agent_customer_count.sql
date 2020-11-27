@@ -3,7 +3,7 @@
 
 SELECT 
     e.FirstName || " " || e.LastName AS SalesRep,
-    COUNT(c.CustomerId)
+    COUNT(c.CustomerId) AS CustomerCount
 FROM Customer c
     JOIN Employee e ON e.EmployeeId = c.SupportRepId
 GROUP BY SalesRep

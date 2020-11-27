@@ -11,15 +11,3 @@ WHERE
 
 
 
-
--- confirm...    
--- SELECT 
---     il.InvoiceLineId, 
---     il.InvoiceId,
---     il.Quantity,
---     il.UnitPrice
--- FROM 
---     InvoiceLine il
--- WHERE 
---     il.InvoiceId = 37;
-

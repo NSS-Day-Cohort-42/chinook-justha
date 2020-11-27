@@ -12,5 +12,4 @@ FROM Invoice i
     JOIN Employee e ON e.EmployeeId = c.SupportRepId
 ORDER BY 
     RepFullName,
-    CustomerFullName,
-    i.Total desc;
+    CustomerFullName;
