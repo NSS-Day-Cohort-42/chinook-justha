@@ -2,23 +2,12 @@
 
 
 SELECT 
-    COUNT(il.InvoiceLineId)
+    il.InvoiceId,
+    COUNT(il.InvoiceLineId) AS TotalLineItems
 FROM 
     InvoiceLine il
 WHERE 
     il.InvoiceId = 37;
 
 
-
-
--- confirm...    
--- SELECT 
---     il.InvoiceLineId, 
---     il.InvoiceId,
---     il.Quantity,
---     il.UnitPrice
--- FROM 
---     InvoiceLine il
--- WHERE 
---     il.InvoiceId = 37;
 
